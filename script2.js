@@ -6,12 +6,11 @@ fetch('movies.csv')
     const movieList = document.getElementById('movie-list');
 
     rows.forEach(row => {
-      const [title, rating, genre, poster] = row.split(',');
+      const [title, actors, director, year, rating] = row.split(',');
 
       const card = document.createElement('div');
       card.className = 'movie-card';
       card.innerHTML = `
-        <img src="${poster}" alt="Poster for ${title}">
         <h3>${title}</h3>
         <p>Rating: ${rating}/10</p>
         <p>Genre: ${genre}</p>
