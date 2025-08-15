@@ -5,7 +5,7 @@ let movies = [];
 form.addEventListener('submit', function(e) {
   e.preventDefault();
   const title = document.getElementById('title').value;
-  const rating = document.getElementById('rating').value;
+  const rating = document.getElementById('rating2').value;
   movies.push({ title, rating });
   displayMovies();
   form.reset();
